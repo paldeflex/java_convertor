@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.stream.Collectors;
 
 public class ConvertorApi {
     private final String apiUrl;
@@ -32,31 +33,18 @@ public class ConvertorApi {
         URL url = new URL(requestUrl);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
-        // Устанавливаем метод запроса
         connection.setRequestMethod("GET");
-
-        // Добавляем необходимые заголовки
         connection.setRequestProperty("Content-Type", "application/json");
         connection.setRequestProperty("apikey", apiKey);
 
-        // Получаем код ответа
         int responseCode = connection.getResponseCode();
 
-        // Читаем ответ
-        if (responseCode == HttpURLConnection.HTTP_OK) { // Успешный ответ
-            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-            String inputLine;
-            StringBuilder content = new StringBuilder();
-
-            while ((inputLine = in.readLine()) != null) {
-                content.append(inputLine);
+        if (responseCode == HttpURLConnection.HTTP_OK) {
+            try (BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()))) {
+                return in.lines().collect(Collectors.joining("\n"));
+            } finally {
+                connection.disconnect();
             }
-
-            // Закрываем соединения
-            in.close();
-            connection.disconnect();
-
-            return content.toString();
         } else {
             System.out.println("GET запрос не удался");
         }

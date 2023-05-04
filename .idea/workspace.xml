@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="debbfcb1-68fd-4315-8f6b-56ceba7fbbeb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Convertor.java.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/ConvertorData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="debbfcb1-68fd-4315-8f6b-56ceba7fbbeb" name="Changes" comment="console version is done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/Convertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/Convertor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/CurrencyAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/ConvertorApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/ConvertorApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/ConvertorApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/ConvertorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/ConvertorData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,5 +197,9 @@
       <updated>1683132339530</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="console version is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="console version is done" />
   </component>
 </project>
