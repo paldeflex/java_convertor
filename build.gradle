@@ -7,3 +7,17 @@ jar {
         attributes('Main-Class': 'com.selipasha.convertorapp.Convertor')
     }
 }
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.6.3'
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+}

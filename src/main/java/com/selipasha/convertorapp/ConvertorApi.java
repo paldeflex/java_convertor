@@ -1,4 +1,5 @@
 package com.selipasha.convertorapp;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,21 +7,28 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class CurrencyAPI {
+public class ConvertorApi {
     private final String apiUrl;
     private final String apiKey;
 
-    public CurrencyAPI(String apiUrl, String apiKey) {
+    public ConvertorApi(String apiUrl, String apiKey) {
         this.apiUrl = apiUrl;
         this.apiKey = apiKey;
     }
 
-    public void convert(String from, String to, int amount) throws IOException {
+    public ConvertorData convert(String from, String to, int amount) throws IOException {
         String requestUrl = String.format("%s?to=%s&from=%s&amount=%d", apiUrl, to, from, amount);
-        sendGetRequest(requestUrl);
+        String jsonResponse = sendGetRequest(requestUrl);
+
+        if (jsonResponse != null) {
+            ObjectMapper mapper = new ObjectMapper();
+            return mapper.readValue(jsonResponse, ConvertorData.class);
+        }
+
+        return null;
     }
 
-    private void sendGetRequest(String requestUrl) throws IOException {
+    private String sendGetRequest(String requestUrl) throws IOException {
         URL url = new URL(requestUrl);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
@@ -33,7 +41,6 @@ public class CurrencyAPI {
 
         // Получаем код ответа
         int responseCode = connection.getResponseCode();
-        System.out.println("Код ответа: " + responseCode);
 
         // Читаем ответ
         if (responseCode == HttpURLConnection.HTTP_OK) { // Успешный ответ
@@ -49,10 +56,11 @@ public class CurrencyAPI {
             in.close();
             connection.disconnect();
 
-            // Выводим результат
-            System.out.println(content);
+            return content.toString();
         } else {
             System.out.println("GET запрос не удался");
         }
+
+        return null;
     }
 }
