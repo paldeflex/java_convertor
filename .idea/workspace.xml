@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="debbfcb1-68fd-4315-8f6b-56ceba7fbbeb" name="Changes" comment="GUI version almost done">
+    <list default="true" id="debbfcb1-68fd-4315-8f6b-56ceba7fbbeb" name="Changes" comment="GUI convertor done">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/ConvertorApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/ConvertorApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/ConvertorGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/ConvertorGui.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,13 +237,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683355277813</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="GUI convertor done">
+      <created>1683373097957</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683373097957</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="console version is done" />
     <MESSAGE value="GUI version structure" />
     <MESSAGE value="GUI version almost done" />
-    <option name="LAST_COMMIT_MESSAGE" value="GUI version almost done" />
+    <MESSAGE value="GUI convertor done" />
+    <option name="LAST_COMMIT_MESSAGE" value="GUI convertor done" />
   </component>
 </project>
