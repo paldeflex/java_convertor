@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.stream.Collectors;
+import java.util.Locale;
 
 public class ConvertorApi {
     private final String apiUrl;
@@ -18,7 +19,7 @@ public class ConvertorApi {
     }
 
     public ConvertorData convert(String from, String to, float amount) throws IOException {
-        String requestUrl = String.format("%s?to=%s&from=%s&amount=%.2f", apiUrl, to, from, amount);
+        String requestUrl = String.format("%s?to=%s&from=%s&amount=%s", apiUrl, to, from, String.format(Locale.US, "%.2f", amount));
         String jsonResponse = sendGetRequest(requestUrl);
 
         if (jsonResponse != null) {
