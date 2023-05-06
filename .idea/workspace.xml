@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="debbfcb1-68fd-4315-8f6b-56ceba7fbbeb" name="Changes" comment="console version is done">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/ConvertorGui.java" afterDir="false" />
+    <list default="true" id="debbfcb1-68fd-4315-8f6b-56ceba7fbbeb" name="Changes" comment="GUI version structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/Convertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/Convertor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/ConvertorGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/ConvertorGui.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,10 +194,19 @@
       <option name="presentableId" value="Default" />
       <updated>1683132339530</updated>
     </task>
+    <task id="LOCAL-00001" summary="GUI version structure">
+      <created>1683353709255</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683353709255</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="console version is done" />
-    <option name="LAST_COMMIT_MESSAGE" value="console version is done" />
+    <MESSAGE value="GUI version structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="GUI version structure" />
   </component>
 </project>
