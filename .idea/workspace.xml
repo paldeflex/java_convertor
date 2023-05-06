@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="debbfcb1-68fd-4315-8f6b-56ceba7fbbeb" name="Changes" comment="console version is done">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/ConvertorGui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/Convertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/Convertor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/ConvertorApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/ConvertorApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/ConvertorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selipasha/convertorapp/ConvertorData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,16 +78,16 @@
     <option name="showScratchesAndConsoles" value="false" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/ps/Java/Convertor/src/test/java",
-    "settings.editor.selected.configurable": "inlay.hints"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ps/Java/Convertor/src/test/java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java" />
