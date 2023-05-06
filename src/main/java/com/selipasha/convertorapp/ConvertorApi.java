@@ -17,8 +17,8 @@ public class ConvertorApi {
         this.apiKey = apiKey;
     }
 
-    public ConvertorData convert(String from, String to, int amount) throws IOException {
-        String requestUrl = String.format("%s?to=%s&from=%s&amount=%d", apiUrl, to, from, amount);
+    public ConvertorData convert(String from, String to, float amount) throws IOException {
+        String requestUrl = String.format("%s?to=%s&from=%s&amount=%.2f", apiUrl, to, from, amount);
         String jsonResponse = sendGetRequest(requestUrl);
 
         if (jsonResponse != null) {
